@@ -8,10 +8,10 @@
   "scripts": {
     "check-node": "node -e \"if (Number(process.versions.node.split('.')[0]) < 20) { console.error('Node.js 20.9+ is required. Current: ' + process.version + '. Run: nvm use'); process.exit(1); }\"",
     "predev": "npm run check-node",
-    "dev": "next dev",
+    "dev": "node scripts/run-next.mjs dev",
     "prebuild": "npm run check-node",
     "build": "next build",
-    "start": "next start",
+    "start": "node scripts/run-next.mjs start",
     "lint": "eslint"
   },
   "dependencies": {
