@@ -1,6 +1,7 @@
 import { About } from "@/components/about";
 import { AiSection } from "@/components/ai-section";
 import { Contact } from "@/components/contact";
+import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
@@ -25,6 +26,7 @@ export default function HomePage() {
         <Projects />
         <AiSection />
         <Principles />
+        <Education />
         <Contact />
       </main>
       <Footer />

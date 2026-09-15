@@ -1,6 +1,6 @@
 /**
- * Portfolio content. Keep facts limited to provided professional history.
- * Update copy here rather than inside presentation components.
+ * Portfolio content strictly aligned with Shyam Kumar Yadav's latest resume.
+ * Single source of truth for portfolio presentation.
  */
 
 export const hero = {
@@ -8,17 +8,17 @@ export const hero = {
   heading: "I build production systems that scale from idea to impact.",
   headingAccent: "impact.",
   supporting:
-    "Full-Stack Engineer specializing in TypeScript, Node.js, NestJS, SaaS platforms, and Generative AI.",
+    "Full-Stack Software Engineer specializing in Node.js, TypeScript, NestJS, and Generative AI.",
   summary:
-    "4+ years of experience designing, building, optimizing, and owning production software across SaaS, healthcare, inventory systems, and AI-powered products.",
+    "4+ years of experience designing, building, and owning production systems end-to-end — from database schema to deployment. Shipped multi-tenant SaaS (20+ tenant orgs, 99%+ uptime), healthcare, inventory/ERP, and production GenAI pipelines with 50–60% API latency optimization.",
 } as const;
 
 export const systemFlow = [
   { label: "API", detail: "NestJS · REST" },
   { label: "Database", detail: "PostgreSQL · TypeORM" },
   { label: "Queue", detail: "Redis · BullMQ" },
-  { label: "AI", detail: "RAG · LLM" },
-  { label: "Client", detail: "Product surfaces" },
+  { label: "AI", detail: "CrewAI · Pinecone RAG" },
+  { label: "Client", detail: "Angular · React · Product surfaces" },
 ] as const;
 
 export const metrics = [
@@ -46,7 +46,7 @@ export const metrics = [
   {
     id: "performance",
     display: "50–60%",
-    label: "API Performance Improvement",
+    label: "API Response-Time Reduction",
     count: false,
   },
   {
@@ -59,42 +59,42 @@ export const metrics = [
 ] as const;
 
 export const about = {
-  title: "Engineering products from database schema to deployment.",
+  title: "Engineering production software from schema to deployment.",
   paragraphs: [
-    "I am a Full-Stack Software Engineer with 4+ years of experience designing and building production systems end to end — from schema and API design through integrations, AI pipelines, and deployment.",
-    "I have taken a multi-tenant SaaS platform from zero to production, led a 3-person engineering team, and supported 20+ tenant organizations while maintaining 99%+ uptime.",
-    "That work spans SaaS platforms, healthcare systems, inventory and ERP systems, and Generative AI applications, including REST APIs, real-time systems, background processing, database optimization, and cloud infrastructure.",
-    "I am comfortable moving between architecture, backend, frontend, databases, integrations, AI pipelines, and deployment — and staying with a system until it is reliable in production.",
+    "Full-stack software engineer with 4+ years of experience designing, building, and owning production systems end-to-end — from database schema to deployment.",
+    "I took a multi-tenant career-coaching SaaS platform (MyRelma) from zero to production and now lead its 3-person engineering team, supporting 20+ tenant organizations with 99%+ uptime maintained post-launch.",
+    "My work spans healthcare, inventory/ERP, and Generative AI-powered career tooling — including LLM orchestration (CrewAI), OpenAI integration, and RAG pipelines (Pinecone) using TypeScript, NestJS, React, PostgreSQL, and Python/FastAPI.",
+    "A strong advocate for data-driven engineering, I achieved a 50–60% reduction in API response times through targeted database query optimization and eliminating application-level performance bottlenecks.",
   ],
   domains: [
-    "SaaS platforms",
-    "Healthcare systems",
-    "Inventory / ERP",
-    "Generative AI",
-    "Real-time systems",
+    "Multi-Tenant SaaS",
+    "Generative AI & RAG",
+    "Inventory & ERP Systems",
+    "Healthcare / Diagnostics",
+    "Real-Time Booking APIs",
   ],
 } as const;
 
 export const workSurface = [
   {
     label: "Architecture",
-    detail: "Ownership from data model to API contract",
+    detail: "Zero-to-production ownership from data models to API contracts",
   },
   {
     label: "Backend",
-    detail: "NestJS, Hapi.js, REST, auth, multi-tenant data",
+    detail: "NestJS, Node.js, Hapi.js, AdonisJS, REST APIs, auth & isolation",
   },
   {
     label: "Processing",
-    detail: "Redis, BullMQ, WebSockets, integrations",
+    detail: "Redis, BullMQ, WebSockets, Socket.io, SSE, real-time queues",
   },
   {
     label: "Intelligence",
-    detail: "RAG, agents, LLM pipelines in production",
+    detail: "CrewAI agentic orchestration, OpenAI LLMs, Pinecone RAG",
   },
   {
     label: "Operations",
-    detail: "Cloud storage, Docker, PM2, GitHub Actions",
+    detail: "Cloudflare R2, AWS S3, Docker, PM2, GitHub Actions (CI/CD)",
   },
 ] as const;
 
@@ -104,12 +104,12 @@ export const skillGroups = [
     items: ["TypeScript", "JavaScript", "Python", "SQL"],
   },
   {
-    title: "Backend",
+    title: "Backend & Frameworks",
     items: ["Node.js", "NestJS", "Hapi.js", "AdonisJS", "REST APIs"],
   },
   {
     title: "Frontend",
-    items: ["Angular", "HTML", "CSS", "Bootstrap"],
+    items: ["Angular", "React", "HTML", "CSS", "Bootstrap"],
   },
   {
     title: "Databases & ORM",
@@ -117,23 +117,23 @@ export const skillGroups = [
   },
   {
     title: "Queues & Real-Time",
-    items: ["BullMQ", "Socket.io", "Pusher", "Server-Sent Events", "WebSockets"],
+    items: ["BullMQ", "Socket.io", "Pusher", "Server-Sent Events (SSE)", "WebSockets"],
   },
   {
-    title: "Cloud / DevOps / Auth",
-    items: ["Cloudflare R2", "AWS S3", "JWT", "OAuth 2.0", "GitHub Actions", "PM2", "Docker"],
+    title: "Cloud, Auth & DevOps",
+    items: ["Cloudflare R2", "AWS S3", "JWT", "OAuth 2.0", "GitHub Actions (CI/CD)", "PM2", "Docker"],
   },
   {
     title: "Generative AI",
-    items: ["OpenAI", "CrewAI", "RAG", "Pinecone", "Prompt Engineering", "LLM Integration"],
+    items: ["LLM Integration (OpenAI)", "Agentic Orchestration (CrewAI)", "RAG Pipelines (Pinecone)", "Prompt Engineering"],
   },
   {
-    title: "Integrations",
-    items: ["Google APIs", "Gmail", "Contacts", "Calendar", "Tasks", "Twilio", "Firebase", "FHIR", "DICOM"],
-  },
-  {
-    title: "AI-Assisted Development",
+    title: "AI-Assisted Development Tools",
     items: ["Cursor", "Claude Code", "Antigravity"],
+  },
+  {
+    title: "Other Integrations",
+    items: ["Google APIs (Auth, Gmail, Contacts, Calendar, Task)", "Twilio", "Firebase", "FHIR", "DICOM"],
   },
 ] as const;
 
@@ -146,74 +146,166 @@ export const experience = {
   achievements: [
     {
       id: "myrelma",
-      title: "MyRelma — Multi-Tenant SaaS",
+      title: "MyRelma — Multi-Tenant SaaS Platform",
       summary:
-        "Took the multi-tenant career-coaching SaaS platform from zero to production.",
+        "Took a multi-tenant career-coaching SaaS platform from zero to production and now lead its 3-person engineering team.",
       highlights: [
-        "Owned architecture end to end",
-        "Designed NestJS REST APIs",
-        "Designed PostgreSQL and TypeORM data models",
-        "Implemented Redis and BullMQ background processing",
-        "Supported 20+ tenant organizations",
-        "Maintained 99%+ uptime",
-        "Led a 3-person engineering team",
+        "Owned architecture end-to-end and led the 3-person engineering team",
+        "Designed NestJS REST APIs and PostgreSQL/TypeORM data modeling",
+        "Implemented Redis/BullMQ background job processing end-to-end",
+        "Onboarded and supported 20+ tenant organizations",
+        "Maintained 99%+ platform uptime post-launch",
       ],
+      technologies: ["NestJS", "PostgreSQL", "TypeORM", "Redis", "BullMQ"],
     },
     {
-      id: "ims-link",
-      title: "IMS Link — Inventory Management",
+      id: "ims-link-perf",
+      title: "IMS Link — API Performance Optimization",
       summary:
-        "Built and delivered a full-stack inventory management system supporting receiving, stocking, picking, and serial-number tracking.",
+        "Cut IMS Link API response times by 50–60% through targeted database and architectural optimization.",
       highlights: [
-        "Covered receiving, stocking, picking, and serial-number tracking",
-        "Delivered the product as a full-stack system",
-        "Integrated with Intuitive ERP and Juki Fortress",
+        "Measured by profiling results and production latency metrics",
+        "Optimized complex MySQL queries",
+        "Eliminated application-level performance bottlenecks",
       ],
-      technologies: ["Angular", "Hapi.js", "MySQL"],
-      integrations: ["Intuitive ERP", "Juki Fortress"],
       callout: {
         label: "50–60% API response-time reduction",
         detail:
-          "Achieved through database query optimization and elimination of application-level bottlenecks.",
+          "Achieved through PostgreSQL/MySQL query optimization and eliminating application-level performance bottlenecks.",
       },
     },
     {
       id: "resume-assistant",
       title: "Generative AI Resume Assistant",
       summary:
-        "Built a production Generative AI resume optimization pipeline.",
+        "Built a production Generative AI resume-optimization pipeline that automates parsing, rewriting, and auditing.",
       highlights: [
-        "Resume parsing",
-        "Resume optimization",
-        "ATS-focused rewriting",
-        "Automated resume auditing",
-        "Retrieval-augmented generation",
+        "Built with FastAPI, CrewAI, OpenAI, and Pinecone RAG",
+        "Automated resume parsing and data extraction",
+        "ATS-optimized content rewriting",
+        "Automated audit report generation",
+        "Launched as a live production AI-powered resume assistant",
       ],
       technologies: ["Python", "FastAPI", "CrewAI", "OpenAI", "Pinecone", "RAG"],
       featured: true,
+    },
+    {
+      id: "ims-link-fullstack",
+      title: "IMS Link — Full-Stack Inventory Management",
+      summary:
+        "Developed and delivered a full-stack inventory management system with external ERP integrations.",
+      highlights: [
+        "Built responsive Angular frontend and Hapi.js/MySQL APIs",
+        "Supported receiving, stocking, picking, and serial-number tracking",
+        "Integrated with Intuitive ERP and Juki Fortress systems",
+      ],
+      technologies: ["Angular", "Hapi.js", "MySQL"],
+      integrations: ["Intuitive ERP", "Juki Fortress"],
     },
   ],
 } as const;
 
 export const projects = [
   {
-    id: "flahy-recovery",
-    title: "FlahyRecovery",
+    id: "myrelma",
+    title: "MyRelma",
+    category: "Multi-Tenant SaaS",
+    dates: "Jan 2022 – Present",
+    description:
+      "A multi-tenant career-coaching SaaS platform built from zero to production, supporting tenant isolation, high availability, and background workflows.",
+    purpose:
+      "Deliver a robust multi-tenant coaching infrastructure with high uptime and seamless onboarding for enterprise organizations.",
+    capabilities: [
+      "Multi-tenant architecture with secure tenant data isolation",
+      "Onboarded and supported 20+ tenant organizations",
+      "Maintained 99%+ platform uptime post-launch",
+      "Redis and BullMQ background job processing end-to-end",
+      "NestJS REST API design and PostgreSQL/TypeORM data modeling",
+    ],
+    contributions: [
+      "Owned architecture end-to-end and led the 3-person development team",
+      "Designed NestJS REST APIs and PostgreSQL/TypeORM data models",
+      "Engineered Redis & BullMQ queues for asynchronous job processing",
+      "Ensured tenant data isolation and production reliability across 20+ organizations",
+    ],
+    technologies: ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "Redis", "BullMQ"],
+    highlight: "Zero-to-production SaaS supporting 20+ tenant organizations & 99%+ uptime",
+    flow: ["Client", "NestJS API", "Redis / BullMQ", "PostgreSQL", "Tenant Workflows"],
+  },
+  {
+    id: "crewai-resume",
+    title: "CrewAI Resume Assistant",
+    category: "Generative AI / Multi-Agent",
+    dates: "Production AI",
+    description:
+      "A production Generative AI pipeline that automates resume parsing, ATS-optimized rewriting, and automated audit generation.",
+    purpose:
+      "Empower job seekers with intelligent, ATS-compliant resume optimizations driven by multi-agent AI orchestration and vector retrieval.",
+    capabilities: [
+      "Resume parsing and structured entity extraction",
+      "ATS-optimized rewriting tailored to job descriptions",
+      "Vector-based context retrieval using Pinecone (RAG)",
+      "Multi-agent task orchestration with CrewAI",
+      "Automated resume audit and feedback report generation",
+    ],
+    contributions: [
+      "Designed and implemented the FastAPI backend and AI orchestration pipeline",
+      "Configured CrewAI multi-agent collaboration for parsing, analysis, and auditing",
+      "Integrated OpenAI LLMs with Pinecone vector database for retrieval-augmented generation",
+      "Deployed and maintained as a production-grade AI-powered resume assistant",
+    ],
+    technologies: ["Python", "FastAPI", "CrewAI", "OpenAI", "Pinecone", "RAG"],
+    highlight: "Multi-agent CrewAI orchestration with Pinecone vector RAG in production",
+    flow: ["Resume", "FastAPI Parser", "Pinecone RAG", "CrewAI Agents", "OpenAI LLM", "ATS Audit"],
+  },
+  {
+    id: "ims-link",
+    title: "IMS Link",
+    category: "Inventory & ERP Systems",
+    dates: "Enterprise System",
+    description:
+      "A full-stack enterprise inventory management system supporting receiving, stocking, picking, and serial-number tracking with ERP integrations.",
+    purpose:
+      "Streamline factory and warehouse operations with accurate serial tracking and synchronized ERP workflows.",
+    capabilities: [
+      "Comprehensive workflows for receiving, stocking, picking, and tracking",
+      "Serial-number tracking across all warehouse operations",
+      "Seamless integration with Intuitive ERP and Juki Fortress",
+      "50–60% API latency reduction achieved through query profiling",
+    ],
+    contributions: [
+      "Developed the complete Angular frontend and Hapi.js/MySQL backend APIs",
+      "Integrated external enterprise platforms: Intuitive ERP and Juki Fortress",
+      "Cut API response times by 50–60% by profiling queries and fixing application-level bottlenecks",
+    ],
+    technologies: ["Angular", "Hapi.js", "MySQL", "PostgreSQL", "REST APIs"],
+    highlight: "50–60% API latency reduction with Intuitive ERP & Juki Fortress integrations",
+    flow: ["Angular UI", "Hapi.js API", "MySQL", "Intuitive ERP", "Juki Fortress"],
+  },
+  {
+    id: "flahybase",
+    title: "Flahybase (FlahyRecovery)",
     category: "Healthcare / Diagnostics",
     dates: "Nov 2024 – Feb 2025",
     description:
-      "Built a healthcare backend supporting labs, patients, samples, and diagnostic reports.",
+      "Healthcare backend for labs, patients, samples, and diagnostic reports, built with strict clinical data standards and security.",
+    purpose:
+      "Provide secure diagnostic data management and patient synchronization for clinical oncology labs.",
     capabilities: [
-      "FHIR patient and report synchronization",
-      "DICOM imaging support",
-      "Multi-role authentication",
-      "Twilio OTP verification",
-      "Azure Maps geo-restriction",
-      "Structured healthcare data synchronization",
-      "200+ patient records during initial rollout",
+      "FHIR patient and diagnostic report synchronization",
+      "DICOM medical imaging workflow support",
+      "Multi-role authentication with Twilio OTP verification",
+      "Azure Maps geo-restriction for regulated regional access",
+      "Structured data sync supporting 200+ patient records during initial rollout",
     ],
-    flow: ["Patient", "API", "FHIR", "Database", "Diagnostic Reports"],
-    highlight: "FHIR and DICOM in a diagnostic workflow",
+    contributions: [
+      "Engineered backend architecture supporting labs, patients, samples, and reports",
+      "Implemented FHIR patient/report synchronization and DICOM imaging integration",
+      "Configured multi-role access control, Twilio OTP, and Azure Maps geo-restriction",
+    ],
+    technologies: ["Node.js", "FHIR", "DICOM", "Twilio", "Azure Maps", "PostgreSQL"],
+    highlight: "FHIR and DICOM compliance in an oncology diagnostic workflow",
+    flow: ["Patient / Lab", "Healthcare API", "FHIR / DICOM", "PostgreSQL", "Diagnostic Reports"],
   },
   {
     id: "gym-pilates",
@@ -221,26 +313,39 @@ export const projects = [
     category: "Booking / Real-Time Systems",
     dates: "Apr 2025 – Oct 2025",
     description:
-      "Built a class booking API with real-time availability and admin and member workflows.",
+      "Class booking API featuring real-time availability updates, double-booking prevention, and bilingual support.",
+    purpose:
+      "Deliver a seamless, real-time class booking experience for studio members and administrators.",
     capabilities: [
-      "Member booking",
-      "Admin booking management",
-      "Live class availability",
-      "Double-booking prevention",
-      "Google OAuth",
-      "Firebase notifications",
-      "English and Spanish localization",
+      "Real-time class availability synchronization via Socket.io",
+      "Robust double-booking prevention under concurrent requests",
+      "Member and admin booking management workflows",
+      "Google OAuth authentication and Firebase push notifications",
+      "Bilingual English/Spanish (EN/ES) localization support",
     ],
-    technologies: [
-      "NestJS",
-      "Prisma",
-      "PostgreSQL",
-      "Socket.io",
-      "Google OAuth",
-      "Firebase",
-      "Push Notifications",
+    contributions: [
+      "Built member and admin booking workflows using NestJS and Prisma",
+      "Implemented Socket.io for instant availability sync and concurrency control",
+      "Integrated Google OAuth, Firebase push notifications, and bilingual localization",
     ],
-    highlight: "Real-time availability synchronization",
+    technologies: ["NestJS", "Prisma", "PostgreSQL", "Socket.io", "Google OAuth", "Firebase"],
+    highlight: "Socket.io live availability synchronization & double-booking prevention",
+    flow: ["Member App", "NestJS API", "Prisma / PostgreSQL", "Socket.io", "Firebase Push"],
+  },
+] as const;
+
+export const education = [
+  {
+    degree: "Master of Computer Applications (MCA)",
+    institution: "Lovely Professional University (LPU)",
+    location: "Punjab, India",
+    dates: "2021 – 2023",
+  },
+  {
+    degree: "Bachelor of Computer Applications (BCA)",
+    institution: "Panjab University (PU)",
+    location: "Chandigarh, India",
+    dates: "2017 – 2020",
   },
 ] as const;
 
@@ -248,17 +353,16 @@ export const aiPipeline = {
   title: "Building with Generative AI",
   subtitle: "From LLM APIs to production-grade AI pipelines.",
   summary:
-    "I integrate Generative AI into products that already have users, data, and operational constraints — not only into chat experiments. The resume assistant is a production pipeline: documents are parsed, retrieved against relevant context, processed by agents and an LLM, rewritten for ATS, and audited automatically.",
+    "I integrate Generative AI into products that already have users, data, and operational constraints. The resume assistant is a production pipeline: documents are parsed, retrieved against relevant context via Pinecone RAG, processed by CrewAI multi-agent orchestration and OpenAI LLMs, rewritten for ATS compliance, and audited automatically.",
   steps: [
-    "Resume",
-    "Parsing",
-    "Retrieval / RAG",
-    "AI Agents",
-    "LLM Processing",
+    "Resume Parsing",
+    "Pinecone RAG Retrieval",
+    "CrewAI Multi-Agent Tasks",
+    "OpenAI LLM Processing",
     "ATS Optimization",
-    "Automated Audit",
+    "Automated Audit Report",
   ],
-  stack: ["FastAPI", "CrewAI", "OpenAI", "Pinecone", "RAG"],
+  stack: ["Python", "FastAPI", "CrewAI", "OpenAI", "Pinecone", "RAG"],
 } as const;
 
 export const principles = [
@@ -269,7 +373,8 @@ export const principles = [
   },
   {
     title: "Optimize With Data",
-    description: "Profile first, identify bottlenecks, then optimize.",
+    description:
+      "Profile first, identify bottlenecks, then optimize (e.g. 50–60% API latency reduction).",
   },
   {
     title: "Design for Production",
@@ -283,11 +388,13 @@ export const principles = [
   },
   {
     title: "AI With Purpose",
-    description: "Use AI where it creates measurable product value.",
+    description:
+      "Use AI where it creates measurable product value, backed by RAG and agentic workflows.",
   },
   {
     title: "Own the Outcome",
-    description: "Focus on business and product impact, not just completed tickets.",
+    description:
+      "Focus on business and product impact, not just completed tickets.",
   },
 ] as const;
 

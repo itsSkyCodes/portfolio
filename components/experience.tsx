@@ -62,9 +62,9 @@ function Achievement({
   onToggle: () => void;
 }) {
   const panelId = useId();
-  const featured = "featured" in item && item.featured;
-  const technologies = "technologies" in item ? item.technologies : undefined;
-  const integrations = "integrations" in item ? item.integrations : undefined;
+  const featured = "featured" in item && Boolean(item.featured);
+  const technologies = "technologies" in item ? (item.technologies as readonly string[]) : undefined;
+  const integrations = "integrations" in item ? (item.integrations as readonly string[]) : undefined;
   const callout = "callout" in item ? item.callout : undefined;
 
   return (

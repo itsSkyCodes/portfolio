@@ -1,7 +1,7 @@
 import { site } from "@/data/site";
-import { skillGroups } from "@/data/portfolio";
+import { education, skillGroups } from "@/data/portfolio";
 
-/** Structured data for the person profile. Facts stay limited to the portfolio content. */
+/** Structured data for the person profile, aligned with the resume. */
 export function JsonLd() {
   const knowsAbout = skillGroups.flatMap((group) => [...group.items]);
 
@@ -9,10 +9,10 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: site.name,
-    jobTitle: "Software Engineer",
+    jobTitle: site.role,
     description: site.description,
     email: `mailto:${site.email}`,
-    telephone: "+91-9569970184",
+    telephone: site.phone,
     url: site.url,
     address: {
       "@type": "PostalAddress",
@@ -23,6 +23,10 @@ export function JsonLd() {
       "@type": "Organization",
       name: site.company,
     },
+    alumniOf: education.map((item) => ({
+      "@type": "EducationalOrganization",
+      name: item.institution,
+    })),
     sameAs: [site.linkedin, site.github],
     knowsAbout,
   };
