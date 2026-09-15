@@ -95,7 +95,7 @@ export function Contact() {
     <section id="contact" aria-labelledby="contact-heading" className="scroll-mt-24 border-t border-white/10 py-24 sm:py-32">
       <Container className="grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-5">
-          <SectionHeading id="contact-heading" index="07" eyebrow="Contact" title={contactCopy.title} />
+          <SectionHeading id="contact-heading" index="08" eyebrow="Contact" title={contactCopy.title} />
           <p className="mt-6 max-w-md text-pretty text-base leading-relaxed text-muted sm:text-lg">
             {contactCopy.summary}
           </p>
