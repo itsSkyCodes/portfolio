@@ -7,7 +7,7 @@ import { Container, SectionHeading } from "@/components/section";
 import { projects } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
-/** Featured project showcase presenting all 5 production projects. */
+/** Featured project showcase presenting all 6 production systems. */
 export function Projects() {
   return (
     <section
@@ -21,7 +21,7 @@ export function Projects() {
           index="04"
           eyebrow="Projects"
           title="Production systems, shipped with constraints."
-          description="Five core systems spanning multi-tenant SaaS, Generative AI orchestration, ERP-integrated inventory, oncology diagnostics, and real-time booking."
+          description="Six core production systems spanning multi-tenant SaaS, Generative AI orchestration, ERP-integrated inventory, oncology diagnostics, social platforms, and real-time booking."
         />
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {projects.map((project) => (
