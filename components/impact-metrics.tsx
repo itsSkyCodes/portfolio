@@ -31,9 +31,9 @@ export function ImpactMetrics() {
           >
             <p className="font-mono text-4xl tracking-tight text-foreground sm:text-5xl">
               {"count" in metric && metric.count ? (
-                <CountUp end={metric.end} suffix={metric.suffix} label={metric.label} />
+                <CountUp end={metric.end} suffix={metric.suffix} />
               ) : (
-                <span aria-label={`${metric.display} ${metric.label}`}>{metric.display}</span>
+                <span>{metric.display}</span>
               )}
             </p>
             <p className="mt-3 max-w-[12rem] text-sm leading-snug text-muted">{metric.label}</p>
@@ -44,7 +44,7 @@ export function ImpactMetrics() {
   );
 }
 
-function CountUp({ end, suffix, label }: { end: number; suffix: string; label: string }) {
+function CountUp({ end, suffix }: { end: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-12% 0px" });
   const reduced = useReducedMotion();
@@ -69,9 +69,13 @@ function CountUp({ end, suffix, label }: { end: number; suffix: string; label: s
   }, [end, inView, reduced]);
 
   return (
-    <span ref={ref} aria-label={`${end}${suffix} ${label}`}>
-      <span aria-hidden>
+    <span ref={ref}>
+      <span aria-hidden="true">
         {value}
+        {suffix}
+      </span>
+      <span className="sr-only">
+        {end}
         {suffix}
       </span>
     </span>
