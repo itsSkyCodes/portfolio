@@ -9,7 +9,7 @@ export const site = {
   role: "Full-Stack Software Engineer",
   title: "Shyam Kumar Yadav | Full-Stack Software Engineer",
   description:
-    "Full-Stack Software Engineer specializing in Node.js, TypeScript, NestJS, and Generative AI. 4+ years building and owning production systems end-to-end.",
+    "Full-Stack Software Engineer specializing in Node.js, TypeScript, NestJS & Generative AI. 4+ years building production systems end-to-end.",
   url: resolveSiteUrl(),
   email: "shyamsky1914@gmail.com",
   phone: "+91 9569970184",
