@@ -1,0 +1,128 @@
+# Shyam Kumar Yadav - Full Technical Profile & Portfolio
+
+> Full-Stack Software Engineer specializing in Node.js, TypeScript, NestJS, and Generative AI with 4+ years of experience designing, building, and owning production systems end-to-end — from database schema design to deployment and engineering team leadership.
+
+## Profile & Contact Information
+
+- **Name**: Shyam Kumar Yadav
+- **Role**: Full-Stack Software Engineer
+- **Experience**: 4+ years (Jan 2022 – Present)
+- **Current Position**: Software Engineer at Luminoguru Pvt. Ltd. (Promoted from Associate Software Engineer)
+- **Location**: Mohali, Punjab / Chandigarh, India
+- **Email**: shyamsky1914@gmail.com
+- **Phone**: +91 9569970184
+- **Portfolio**: https://its-sky-portfolio.vercel.app
+- **LinkedIn**: https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6
+- **GitHub**: https://github.com/itsskycodes
+
+## Core Metrics & Achievements
+
+- **Production Systems Owned**: Built and deployed production systems across multi-tenant SaaS, healthcare diagnostics, ERP/inventory, and real-time platforms.
+- **Tenant Scale & High Availability**: Built MyRelma from zero to production, supporting 20+ tenant organizations at 99%+ platform uptime while leading a 3-person engineering team.
+- **Latency Optimization**: Reduced API response times by 30–40% on production enterprise systems through query profiling, indexing, and eliminating N+1 bottlenecks.
+- **Background Processing**: Engineered Redis and BullMQ architectures running across 10 distinct job queues for asynchronous processing.
+- **Generative AI & Agentic RAG**: Shipped live AI services integrating FastAPI, CrewAI multi-agent orchestration, OpenAI GPT-4o, Pinecone vector search, and real-time SSE streaming.
+
+## Technical Skills Matrix
+
+- **Languages**: TypeScript, JavaScript, Python, SQL
+- **Backend Frameworks**: Node.js, NestJS, Express.js, Hapi.js, AdonisJS (v6), FastAPI, REST APIs
+- **Frontend**: Angular, React, Next.js, HTML5, CSS3, Bootstrap, ngx-datatable, D3/ngx-charts
+- **Databases & ORM**: PostgreSQL, MySQL, MongoDB, Redis, TypeORM, Prisma, Objection.js, Sequelize ORM
+- **Queues & Streaming**: BullMQ (10 job queues), Socket.io, Pusher, Server-Sent Events (SSE), WebSockets
+- **Cloud & DevOps**: AWS S3, Cloudflare R2, Azure Blob Storage, Docker, PM2, GitHub Actions CI/CD
+- **Security & Auth**: JWT, OAuth 2.0, Google OAuth, Twilio OTP, Role-Based Access Control (RBAC), Helmet HTTP hardening, rate limiting with failover
+- **Generative AI & Tools**: OpenAI GPT-4o, CrewAI (multi-agent orchestration), Pinecone (Vector RAG), Prompt Engineering, Cursor, Claude Code, Antigravity
+- **Protocols & Integrations**: FHIR, DICOM, Google Workspace APIs (Gmail sync, Contacts, Calendar, Tasks), LinkedIn API, Twilio, Firebase (FCM), Intuitive ERP, Juki Fortress
+
+## Detailed Production Projects
+
+### 1. MyRelma — Multi-Tenant Career Coaching SaaS
+- **Category**: Multi-Tenant SaaS & Generative AI
+- **Timeline**: Jun 2025 – Present
+- **Stack**: NestJS, TypeScript, PostgreSQL, TypeORM, Redis, BullMQ, FastAPI, CrewAI, OpenAI GPT-4o, Pinecone, Pusher, Cloudflare R2
+- **Architecture**:
+  - 27-module NestJS REST API with PostgreSQL/TypeORM multi-tenant data modeling and strict tenant isolation.
+  - Redis and BullMQ background processing across 10 distinct job queues.
+  - Generative AI career assistant microservice (FastAPI + CrewAI + OpenAI GPT-4o + Pinecone RAG) with 6 production endpoints: resume parsing (PDF, DOCX, Images), section-by-section rewriting, full audit scoring, and email drafting.
+  - SSE-streamed conversational resume chat with LLM classifier routing across 9 message types (62K+ lines of service logic).
+  - Context-aware email composition assistant streaming drafts via SSE.
+  - Google Workspace integration (Gmail sync, Contacts, Calendar, Tasks) and LinkedIn OAuth 2.0.
+  - Redis-backed distributed rate limiting with Postgres failover, per-email auth throttling, and Helmet HTTP hardening.
+
+### 2. IMS Link — Inventory Management System (App + API)
+- **Category**: Inventory & ERP Systems
+- **Timeline**: May 2022 – June 2025
+- **Stack**: Angular, TypeScript, Hapi.js, MySQL, PostgreSQL, node-cron, bwip-js, SheetJS, Intuitive ERP, Juki Fortress
+- **Architecture**:
+  - 30–40% API response-time reduction achieved through production query profiling, N+1 pattern elimination, and refactoring bottlenecks.
+  - Core modules for item receiving (barcode scanning), warehouse stocking, order picking, serial-number lifecycle tracking, BOM management, and shortage ticketing.
+  - Angular frontend using ngx-datatable, Dragula drag-and-drop, bwip-js barcode generation, and SheetJS data import with Hapi.js/MySQL REST APIs.
+  - Bidirectional XML-to-JSON transforms with scheduled cron sync for Intuitive ERP and Juki Fortress reconciliation.
+  - Jaro-Winkler fuzzy search and automated Nodemailer shortage alerts.
+
+### 3. FlahyRecovery — Oncology Diagnostics Platform
+- **Category**: Healthcare & Diagnostics
+- **Timeline**: Nov 2024 – Feb 2025
+- **Stack**: AdonisJS (v6), TypeScript, PostgreSQL, Objection.js, FHIR, DICOM, Azure Blob Storage, Twilio, Firebase, Sharp
+- **Architecture**:
+  - Dual-API healthcare backend (main API + dedicated DICOM imaging API) on AdonisJS v6/PostgreSQL with Bouncer policy-based authorization.
+  - FHIR-compliant patient and diagnostic report synchronization supporting 200+ patient records.
+  - DICOM medical imaging service (dcmjs, dicom-parser) with Azure Blob Storage.
+  - Automated PDF-to-image thumbnailing pipeline (pdf2pic + Sharp) for instant clinical preview.
+  - Multi-role access control, Twilio OTP verification, Firebase push notifications, and QR-based sample tracking.
+
+### 4. IChooseIAM — Social Community & Event Platform
+- **Category**: Social & Event Platform
+- **Timeline**: Mar 2025 – Apr 2025
+- **Stack**: NestJS, TypeScript, Prisma, MySQL, Socket.io, Firebase (FCM), Handlebars
+- **Architecture**:
+  - Event-scoped RBAC and delegation system enabling event creators to assign per-event roles (event admins, co-creators) with isolated access boundaries.
+  - Incognito Mode privacy architecture generating gender-aware pseudo-identities on public feeds while preserving mutual connections.
+  - End-to-end referral and invite-tracking engine with automated self-referral prevention and per-event conversion analytics.
+  - Real-time event lifecycle notifications via Socket.io and Firebase Cloud Messaging with Android/iOS deep-linking.
+
+### 5. Gym Pilates — Fitness Class Booking Platform
+- **Category**: Booking & Real-Time Systems
+- **Timeline**: Apr 2025 – Oct 2025
+- **Stack**: NestJS, TypeScript, Prisma, PostgreSQL, Socket.io, Firebase, Google OAuth, i18next
+- **Architecture**:
+  - High-concurrency fitness class scheduling and booking workflows on NestJS and Prisma ORM.
+  - Database-level concurrency control to strictly eliminate double-bookings during peak booking windows.
+  - Socket.io WebSocket gateway for real-time seat availability updates.
+  - Google OAuth 2.0 social login, Firebase Cloud Messaging push alerts, and bilingual English/Spanish (EN/ES) i18n support.
+  - Admin management APIs for user administration, class CRUD with cancellation-reason tracking, and subscription plans.
+
+### 6. WalletApp — Multi-Wallet Expense Tracking & Management API
+- **Category**: FinTech & Financial Tracking
+- **Timeline**: Mar 2022 – May 2022
+- **Stack**: Node.js, Express.js, MySQL, Sequelize ORM, JWT, Bcrypt, Multer, Jimp, Nodemailer
+- **Architecture**:
+  - Multi-wallet financial tracking REST API supporting cash and debit accounts across 11+ expense categories with multi-currency handling.
+  - Sequelize aggregation queries for real-time monthly budget totals and soft-delete audit trails.
+  - JWT authentication with Bcrypt password encryption, express-validator input sanitization, and automated 6-digit OTP email resets.
+  - Administrative control panel with login audit tracking and device fingerprinting via node-device-detector.
+  - Profile-image pipeline using Multer for uploads and Jimp for resizing and optimization.
+
+## Generative AI Pipeline Architecture
+
+- **Workflow Steps**:
+  1. Resume Parsing: Extract text and structure from PDF, DOCX, and image formats.
+  2. Pinecone Vector RAG: Retrieve domain context and benchmark job profiles.
+  3. CrewAI Multi-Agent Task Routing: Route sub-tasks across specialized agents for analysis and auditing.
+  4. OpenAI GPT-4o Execution: Generate structured, ATS-compliant recommendations and rewritten sections.
+  5. Real-Time SSE Streaming: Stream generated responses progressively to the user interface.
+  6. Automated Scoring: Produce detailed audit reports and ATS compatibility scores.
+
+## Professional Experience
+
+### Luminoguru Pvt. Ltd. — Mohali, Punjab, India
+- **Software Engineer** (Jan 2022 – Present)
+  - Promoted from Associate Software Engineer.
+  - Architected zero-to-production SaaS, Generative AI pipelines, healthcare platforms, and inventory systems.
+  - Led a 3-person engineering team, conducted architecture and code quality reviews, and maintained 99%+ platform uptime.
+
+## Education
+
+- **Master of Computer Applications (MCA)**: Lovely Professional University (LPU), Punjab, India (2021 – 2023)
+- **Bachelor of Computer Applications (BCA)**: Panjab University (PU), Chandigarh, India (2017 – 2020)
