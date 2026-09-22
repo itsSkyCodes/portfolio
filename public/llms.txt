@@ -2,135 +2,42 @@
 
 > Full-Stack Software Engineer specializing in Node.js, TypeScript, NestJS, and Generative AI with 4+ years of experience designing, building, and owning production systems end-to-end — from database schema design to deployment and engineering team leadership.
 
-## Profile Summary
+## Projects & Systems
 
-- **Role**: Full-Stack Software Engineer
-- **Experience**: 4+ years (Jan 2022 – Present)
-- **Current Position**: Software Engineer at Luminoguru Pvt. Ltd. (Promoted from Associate Software Engineer)
-- **Location**: Mohali, Punjab / Chandigarh, India
-- **Email**: shyamsky1914@gmail.com
-- **Phone**: +91 9569970184
-- **LinkedIn**: https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6
-- **GitHub**: https://github.com/itsskycodes
+- [MyRelma — Multi-Tenant Career Coaching SaaS](https://its-sky-portfolio.vercel.app/#projects): Zero-to-production 27-module NestJS REST platform supporting 20+ tenant organizations at 99%+ uptime with Redis/BullMQ (10 queues) and CrewAI/Pinecone RAG assistant.
+- [IMS Link — Enterprise Inventory Management System](https://its-sky-portfolio.vercel.app/#projects): Full-stack warehouse and inventory system with 30–40% API latency reduction, barcode scanning, and bidirectional sync for Intuitive ERP & Juki Fortress.
+- [FlahyRecovery — Oncology Diagnostics Platform](https://its-sky-portfolio.vercel.app/#projects): Dual-API clinical backend on AdonisJS v6 with FHIR patient sync (200+ records), DICOM medical imaging service, Azure Blob Storage, and Twilio OTP.
+- [IChooseIAM — Social Community & Event Platform](https://its-sky-portfolio.vercel.app/#projects): Event platform featuring event-scoped delegation RBAC, Incognito Mode pseudo-identity architecture, referral tracking, and real-time Socket.io/FCM alerts.
+- [Gym Pilates — Fitness Class Booking Platform](https://its-sky-portfolio.vercel.app/#projects): High-concurrency class booking platform with database concurrency control against double-bookings, Socket.io live availability, and bilingual i18n.
+- [WalletApp — Multi-Wallet Expense Tracking API](https://its-sky-portfolio.vercel.app/#projects): Multi-wallet financial tracking REST API with Sequelize aggregations, JWT/Bcrypt security, device fingerprinting, and automated email OTP resets.
 
-## Core Competencies & Metrics
+## Portfolio Sections
 
-- **Production Ownership**: End-to-end design, implementation, and deployment from data models to API contracts, frontend surfaces, and cloud operations.
-- **Scale & Availability**: Shipped MyRelma (multi-tenant SaaS) supporting 20+ tenant organizations with 99%+ post-launch platform uptime.
-- **Performance Engineering**: Cut API response times by 30–40% on production enterprise systems through latency profiling, MySQL query optimization, and eliminating N+1 bottlenecks.
-- **Generative AI & Agentic RAG**: Built production GenAI pipelines with FastAPI, CrewAI multi-agent orchestration, OpenAI GPT-4o, Pinecone vector RAG, and real-time Server-Sent Events (SSE) streaming.
-- **Background Processing & Queues**: Engineered Redis/BullMQ processing architectures operating across 10 distinct background job queues.
-- **Engineering Leadership**: Led a 3-person engineering team across sprint planning, system architecture, and code quality reviews.
+- [About Shyam Kumar Yadav](https://its-sky-portfolio.vercel.app/#about): 4+ years of experience, engineering leadership, and key domains spanning multi-tenant SaaS, healthcare diagnostics, and GenAI.
+- [Technical Skills & Stack](https://its-sky-portfolio.vercel.app/#skills): Full breakdown of languages (TypeScript, JavaScript, Python, SQL), frameworks (NestJS, Express, AdonisJS, Angular, React), databases, queues, and AI tools.
+- [Work Experience](https://its-sky-portfolio.vercel.app/#experience): Software Engineer at Luminoguru Pvt. Ltd. (Jan 2022 – Present), promoted from Associate Software Engineer.
+- [Generative AI Architecture](https://its-sky-portfolio.vercel.app/#ai): Production agentic pipeline details featuring FastAPI, CrewAI multi-agent routing, OpenAI GPT-4o, Pinecone vector RAG, and SSE streaming.
+- [Engineering Principles](https://its-sky-portfolio.vercel.app/#principles): Core philosophies: Build End-to-End, Optimize With Data, Design for Production, and Keep Systems Maintainable.
+- [Education & Credentials](https://its-sky-portfolio.vercel.app/#education): Master of Computer Applications (MCA) from Lovely Professional University and Bachelor of Computer Applications (BCA) from Panjab University.
+- [Contact & Inquiries](https://its-sky-portfolio.vercel.app/#contact): Direct contact form and outreach channels.
 
-## Technical Skills
+## Professional Profiles
 
-- **Languages**: TypeScript, JavaScript, Python, SQL
-- **Backend & Frameworks**: Node.js, NestJS, Express.js, Hapi.js, AdonisJS (v6), FastAPI, REST APIs
-- **Frontend**: Angular, React, HTML5, CSS3, Bootstrap, ngx-datatable, D3/ngx-charts
-- **Databases & ORMs**: PostgreSQL, MySQL, MongoDB, Redis, TypeORM, Prisma, Objection.js, Sequelize ORM
-- **Queues & Real-Time**: BullMQ (10 job queues), Socket.io, Pusher, Server-Sent Events (SSE streaming), WebSockets
-- **Cloud & DevOps**: AWS S3, Cloudflare R2, Azure Blob Storage, Docker, PM2, GitHub Actions (CI/CD)
-- **Authentication & Security**: JWT, OAuth 2.0, Google OAuth, Twilio OTP, Role-Based Access Control (RBAC), Helmet, rate limiting with failover
-- **Generative AI**: OpenAI GPT-4o, CrewAI (multi-agent orchestration), Pinecone (vector database & RAG), Prompt Engineering, SSE stream delivery
-- **AI-Assisted Development Tools**: Cursor, Claude Code, Antigravity
-- **Protocols & Third-Party Integrations**: FHIR, DICOM, Google Workspace APIs (Gmail sync, Contacts, Calendar, Tasks), LinkedIn API, Twilio, Firebase (FCM), Intuitive ERP, Juki Fortress
+- [LinkedIn Profile](https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6): Connect with Shyam Kumar Yadav on LinkedIn for professional background and endorsements.
+- [GitHub Profile](https://github.com/itsskycodes): Explore open-source projects, code repositories, and technical contributions.
+- [Email Contact](mailto:shyamsky1914@gmail.com): Direct email contact for engineering roles, consulting, and system design discussions.
 
-## Key Projects
+## Core Technical Stack
 
-### 1. MyRelma — Multi-Tenant Career Coaching SaaS
-- **Role**: Lead Architect & Backend Engineer (Led 3-person team)
-- **Timeline**: Jun 2025 – Present
-- **Category**: Multi-Tenant SaaS & Generative AI
-- **Stack**: NestJS, TypeScript, PostgreSQL, TypeORM, Redis, BullMQ, FastAPI, CrewAI, OpenAI GPT-4o, Pinecone, Pusher, Cloudflare R2
-- **Key Highlights**:
-  - Architected and built 27-module NestJS REST API with PostgreSQL/TypeORM multi-tenant isolation from scratch.
-  - Onboarded and supported 20+ tenant organizations maintaining 99%+ uptime post-launch.
-  - Engineered background job processing with Redis and BullMQ across 10 distinct queues.
-  - Built Generative AI career assistant microservice (FastAPI + CrewAI + OpenAI GPT-4o + Pinecone RAG) with 6 production endpoints spanning resume parsing (PDF/DOCX/Images), rewriting, audit scoring, and email drafting.
-  - Implemented SSE-streamed conversational resume chat with LLM classifier routing across 9 message types (62K+ lines of service logic).
-  - Integrated Google Workspace (Gmail sync, Contacts, Calendar, Tasks) and LinkedIn OAuth directly into the platform.
-  - Engineered Redis-backed distributed rate limiting with Postgres failover, per-email auth throttling, and Helmet HTTP hardening.
+- [TypeScript](https://www.typescriptlang.org/): Primary typed programming language for enterprise APIs and web apps.
+- [NestJS](https://nestjs.com/): Scalable Node.js framework used for microservices and modular REST APIs.
+- [Node.js](https://nodejs.org/): Backend runtime for high-throughput asynchronous services.
+- [Python & FastAPI](https://fastapi.tiangolo.com/): High-performance microservice framework for GenAI and RAG pipelines.
+- [PostgreSQL](https://www.postgresql.org/) & [MySQL](https://www.mysql.com/): Relational database engines with TypeORM, Prisma, and Sequelize.
+- [Redis](https://redis.io/) & [BullMQ](https://bullmq.io/): Distributed caching, rate limiting, and 10 background job queues.
+- [CrewAI](https://www.crewai.com/) & [Pinecone](https://www.pinecone.io/): Multi-agent AI task orchestration and vector retrieval-augmented generation.
+- [Angular](https://angular.dev/) & [React](https://react.dev/): Responsive frontend client architectures.
 
-### 2. IMS Link — Inventory Management System (App + API)
-- **Role**: Full-Stack Developer
-- **Timeline**: May 2022 – June 2025
-- **Category**: Inventory & ERP Systems
-- **Stack**: Angular, TypeScript, Hapi.js, MySQL, PostgreSQL, node-cron, bwip-js, SheetJS, Intuitive ERP, Juki Fortress
-- **Key Highlights**:
-  - Reduced API response times by 30–40% via profiling production queries, eliminating N+1 patterns, and refactoring bottlenecks.
-  - Built warehouse modules for item receiving (barcode scanning), stocking, order picking, serial-number lifecycle tracking, BOM management, and shortage ticketing.
-  - Developed responsive Angular frontend (ngx-datatable, Dragula drag-and-drop, bwip-js barcode generation, SheetJS import) with Hapi.js/MySQL REST APIs.
-  - Integrated Intuitive ERP and Juki Fortress via bidirectional XML-to-JSON transforms with scheduled cron sync for automated reconciliation.
-  - Implemented Jaro-Winkler fuzzy search and automated Nodemailer alerts for shortages and work-order updates.
+## Optional
 
-### 3. FlahyRecovery — Oncology Diagnostics Platform
-- **Role**: Backend Engineer
-- **Timeline**: Nov 2024 – Feb 2025
-- **Category**: Healthcare & Diagnostics
-- **Stack**: AdonisJS (v6), TypeScript, PostgreSQL, Objection.js, FHIR, DICOM, Azure Blob Storage, Twilio, Firebase, Sharp
-- **Key Highlights**:
-  - Engineered dual-API healthcare backend (main API + dedicated DICOM imaging API) on AdonisJS v6/PostgreSQL with Bouncer policy authorization.
-  - Implemented FHIR-compliant patient and diagnostic report synchronization supporting 200+ patient records.
-  - Built DICOM imaging service using dcmjs and dicom-parser with Azure Blob Storage.
-  - Developed automated PDF-to-image thumbnailing pipeline using pdf2pic and Sharp for instant clinical preview.
-  - Integrated Twilio OTP verification, Firebase push notifications, and QR-based sample tracking.
-
-### 4. IChooseIAM — Social Community & Event Platform
-- **Role**: Backend Engineer
-- **Timeline**: Mar 2025 – Apr 2025
-- **Category**: Social & Event Platform
-- **Stack**: NestJS, TypeScript, Prisma, MySQL, Socket.io, Firebase (FCM), Handlebars
-- **Key Highlights**:
-  - Engineered event-scoped RBAC and delegation system enabling event creators to assign per-event roles (event admins, co-creators) with isolated access boundaries.
-  - Designed and built "Incognito Mode" privacy architecture generating gender-aware pseudo-identities to anonymize user presence on public feeds while preserving mutual connections.
-  - Built end-to-end referral and invite-tracking engine with automated self-referral prevention and per-event conversion analytics.
-  - Implemented real-time event lifecycle notifications via Socket.io and Firebase Cloud Messaging with deep-linking support for Android and iOS.
-
-### 5. Gym Pilates — Fitness Class Booking Platform
-- **Role**: Backend Engineer
-- **Timeline**: Apr 2025 – Oct 2025
-- **Category**: Booking & Real-Time Systems
-- **Stack**: NestJS, TypeScript, Prisma, PostgreSQL, Socket.io, Firebase, Google OAuth, i18next
-- **Key Highlights**:
-  - Engineered high-concurrency fitness class scheduling and booking workflows on NestJS and Prisma ORM.
-  - Designed database concurrency control patterns to eliminate double-bookings during peak booking windows.
-  - Integrated Socket.io WebSocket gateway for real-time seat availability updates.
-  - Integrated Google OAuth 2.0 social login, Firebase Cloud Messaging push alerts, and bilingual English/Spanish (EN/ES) i18n via i18next.
-  - Built admin-facing APIs for user administration, class CRUD with cancellation-reason tracking, and subscription plan lifecycle management.
-
-### 6. WalletApp — Multi-Wallet Expense Tracking & Management API
-- **Role**: Backend Engineer
-- **Timeline**: Mar 2022 – May 2022
-- **Category**: FinTech & Financial Tracking
-- **Stack**: Node.js, Express.js, MySQL, Sequelize ORM, JWT, Bcrypt, Multer, Jimp, Nodemailer
-- **Key Highlights**:
-  - Architected multi-wallet financial tracking REST API supporting cash and debit accounts across 11+ expense categories with multi-currency handling.
-  - Constructed Sequelize aggregation queries for real-time monthly budget totals and soft-delete audit trails.
-  - Implemented JWT security with Bcrypt password encryption, express-validator input sanitization, and automated 6-digit OTP password-reset workflow via Nodemailer.
-  - Built administrative management panel with login audit tracking and device fingerprinting via node-device-detector.
-  - Constructed secure profile-image processing pipeline using Multer for uploads and Jimp for resizing and optimization.
-
-## Generative AI Architecture Overview
-
-- **Pipeline Workflow**: Resume Parsing (PDF/DOCX/Images) -> Pinecone Vector RAG Retrieval -> CrewAI Multi-Agent Task Routing -> OpenAI GPT-4o Structured Execution -> Real-Time SSE Streaming Output -> Automated ATS Audit & Scoring.
-- **Stack**: FastAPI, CrewAI, OpenAI GPT-4o, Pinecone, RAG, SSE, Python.
-
-## Professional Experience
-
-### Luminoguru Pvt. Ltd. — Mohali, Punjab, India
-- **Software Engineer** (Jan 2022 – Present)
-  - Promoted from Associate Software Engineer.
-  - Led engineering of multi-tenant SaaS, Generative AI tooling, enterprise ERP/inventory systems, and healthcare platforms.
-  - Guided a 3-person engineering team, conducted architecture design reviews, and enforced production reliability and security standards.
-
-## Education
-
-- **Master of Computer Applications (MCA)** — Lovely Professional University (LPU), Punjab, India (2021 – 2023)
-- **Bachelor of Computer Applications (BCA)** — Panjab University (PU), Chandigarh, India (2017 – 2020)
-
-## Links & Contact
-
-- **Email**: shyamsky1914@gmail.com
-- **Phone**: +91 9569970184
-- **LinkedIn**: https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6
-- **GitHub**: https://github.com/itsskycodes
+- [Full Technical Dossier](https://its-sky-portfolio.vercel.app/llms-full.txt): Comprehensive deep-dive specification containing complete project capabilities, metrics, architectural flows, and full engineering details.
