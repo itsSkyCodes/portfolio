@@ -1,0 +1,92 @@
+# Shyam Kumar Yadav
+
+> Full-Stack Software Engineer specializing in Node.js, TypeScript, NestJS, and Generative AI with 4+ years of experience designing, building, and owning production systems end-to-end - from database schema to deployment.
+
+## Profile Summary
+
+- **Role**: Full-Stack Software Engineer
+- **Experience**: 4+ years (Jan 2022 - Present)
+- **Current Position**: Software Engineer at Luminoguru Pvt. Ltd. (Promoted from Associate Software Engineer)
+- **Location**: Mohali, Punjab / Chandigarh, India
+- **Email**: shyamsky1914@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6
+- **GitHub**: https://github.com/itsskycodes
+
+## Core Competencies & Metrics
+
+- **Production Ownership**: End-to-end design, implementation, and deployment from database schema to API contracts and frontend surfaces.
+- **Scale & Availability**: Shipped multi-tenant SaaS supporting 20+ tenant organizations with 99%+ post-launch uptime.
+- **Performance Engineering**: Cut API latency by 30-40% on enterprise systems through profiling, database indexing, and query optimization.
+- **Generative AI & RAG**: Built live production AI pipelines with CrewAI multi-agent orchestration, OpenAI LLMs, and Pinecone vector search.
+- **Engineering Leadership**: Led a 3-person development team across architecture, code reviews, and sprints.
+
+## Technical Skills
+
+- **Languages**: TypeScript, JavaScript, Python, SQL
+- **Backend & Frameworks**: Node.js, NestJS, Hapi.js, AdonisJS, REST APIs
+- **Frontend**: Angular, React, HTML5, CSS3, Bootstrap
+- **Databases & ORM**: PostgreSQL, MySQL, MongoDB, Redis, TypeORM, Prisma
+- **Queues & Real-Time**: BullMQ, Redis Queues, Socket.io, Pusher, Server-Sent Events (SSE), WebSockets
+- **Cloud & DevOps**: Cloudflare R2, AWS S3, Docker, PM2, GitHub Actions (CI/CD)
+- **Authentication & Security**: JWT, OAuth 2.0, Google OAuth, Twilio OTP, Role-Based Access Control (RBAC)
+- **Generative AI & Tools**: OpenAI APIs, CrewAI (Multi-Agent Orchestration), Pinecone (Vector Database & RAG), Prompt Engineering, Cursor, Claude Code, Antigravity
+- **Domain Protocols & Integrations**: FHIR, DICOM, Google Workspace APIs (Auth, Gmail, Contacts, Calendar, Tasks), Twilio, Firebase
+
+## Key Projects
+
+### 1. MyRelma - Multi-Tenant Career Coaching SaaS
+- **Role**: Lead Architect & Backend Engineer (Led 3-person team)
+- **Stack**: NestJS, TypeScript, PostgreSQL, TypeORM, Redis, BullMQ
+- **Highlights**:
+  - Engineered zero-to-production SaaS platform with strict tenant data isolation.
+  - Onboarded and supported 20+ tenant organizations while maintaining 99%+ uptime.
+  - Built robust background processing queues using Redis and BullMQ.
+
+### 2. Generative AI Resume Assistant
+- **Role**: AI / Full-Stack Engineer
+- **Stack**: Python, FastAPI, CrewAI, OpenAI, Pinecone, RAG
+- **Highlights**:
+  - Live production AI pipeline for document parsing, ATS-compliant rewriting, and auditing.
+  - Orchestrated multi-agent collaboration with CrewAI and context retrieval using Pinecone vector database.
+  - Automated structured data extraction and instant report generation.
+
+### 3. IMS Link - Enterprise Inventory & ERP System
+- **Role**: Full-Stack Developer
+- **Stack**: Angular, Hapi.js, MySQL, PostgreSQL
+- **Highlights**:
+  - Full-stack system supporting receiving, stocking, picking, and serial-number tracking.
+  - Integrated enterprise platforms: Intuitive ERP and Juki Fortress.
+  - Reduced API response times by 30-40% via query profiling and eliminating application bottlenecks.
+
+### 4. Flahybase (FlahyRecovery) - Clinical Healthcare Backend
+- **Role**: Backend Engineer
+- **Stack**: Node.js, PostgreSQL, FHIR, DICOM, Twilio, Azure Maps
+- **Highlights**:
+  - Built diagnostic data workflows for oncology laboratories adhering to FHIR and DICOM standards.
+  - Configured multi-role access control, Twilio OTP verification, and Azure Maps geo-fencing.
+
+### 5. Gym Pilates - Real-Time Booking Engine
+- **Role**: Backend Engineer
+- **Stack**: NestJS, Prisma, PostgreSQL, Socket.io, Google OAuth, Firebase
+- **Highlights**:
+  - Real-time availability synchronization with Socket.io and double-booking concurrency prevention.
+  - Integrated push notifications via Firebase and multi-language support (English/Spanish).
+
+## Professional Experience
+
+### Luminoguru Pvt. Ltd. - Mohali, Punjab, India
+- **Software Engineer** (Jan 2022 - Present)
+  - Promoted from Associate Software Engineer.
+  - Architected and delivered client and internal enterprise software solutions.
+  - Mentored junior engineers and led sprint planning and code quality reviews.
+
+## Education
+
+- **Master of Computer Applications (MCA)** - Lovely Professional University (LPU), Punjab, India (2021 - 2023)
+- **Bachelor of Computer Applications (BCA)** - Panjab University (PU), Chandigarh, India (2017 - 2020)
+
+## Links & Profiles
+
+- LinkedIn: https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6
+- GitHub: https://github.com/itsskycodes
+- Email: shyamsky1914@gmail.com
