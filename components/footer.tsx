@@ -17,12 +17,21 @@ export function Footer() {
             {site.location}
           </p>
         </div>
-        <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2">
+        <nav aria-label="Footer" className="flex flex-wrap items-center gap-x-5 gap-y-2">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-sm text-muted hover:text-foreground">
               {link.label}
             </a>
           ))}
+          <a
+            href={site.resume.url}
+            download={site.resume.filename}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-accent hover:underline"
+          >
+            Resume (PDF)
+          </a>
         </nav>
       </div>
       <div className="mx-auto mt-8 w-full max-w-6xl px-5 sm:px-8">

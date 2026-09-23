@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader2 } from "lucide-react";
+import { Download, Loader2 } from "lucide-react";
 import { useState, type FormEvent, type ReactNode } from "react";
 
 import { Container, SectionHeading } from "@/components/section";
@@ -115,6 +115,19 @@ export function Contact() {
             <p>
               <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-muted">Location</span>
               <span className="mt-1 inline-block">{site.location}</span>
+            </p>
+            <p>
+              <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-muted">Resume</span>
+              <a
+                className="mt-1 inline-flex items-center gap-1.5 text-accent hover:underline"
+                href={site.resume.url}
+                download={site.resume.filename}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="size-3.5" aria-hidden />
+                Download Resume (PDF)
+              </a>
             </p>
           </address>
           <SocialLinks className="mt-6" showLabels />
