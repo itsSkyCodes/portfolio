@@ -4,6 +4,7 @@
 
 [![Full-Stack Developer](https://img.shields.io/badge/Role-Full--Stack%20Software%20Developer-10b981?style=for-the-badge)](https://github.com/itsskycodes)
 [![Experience](https://img.shields.io/badge/Experience-4%2B%20Years%20Production-3b82f6?style=for-the-badge)](https://github.com/itsskycodes)
+[![Download Resume](https://img.shields.io/badge/Download-Resume_PDF-2ea44f?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./public/resume/Shyam_Kumar_Yadav_Resume.pdf)
 [![Location](https://img.shields.io/badge/Location-Chandigarh%2C%20India-f59e0b?style=for-the-badge)](https://www.google.com/maps/place/Chandigarh)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6)
@@ -21,7 +22,7 @@ Full-stack software engineer with **4+ years shipping production systems end-to-
 
 Engineered AI-powered career tooling with **LLM orchestration (CrewAI)**, **OpenAI integration (GPT-4o)**, **vector RAG pipelines (Pinecone)**, and **real-time SSE streaming** — alongside systems spanning healthcare diagnostics (**FHIR/DICOM**), enterprise inventory/ERP, and fitness class booking, using **TypeScript, NestJS, Python/FastAPI, PostgreSQL, Angular, and React**.
 
-Demonstrated track record of performance optimization, cutting production API response times by **30–40%** through targeted database profiling, eliminating N+1 patterns, and refactoring backend bottlenecks.
+Demonstrated track record of performance optimization, cutting production API response times by **50–60%** through targeted database profiling, eliminating N+1 patterns, and refactoring backend bottlenecks.
 
 ---
 
@@ -201,7 +202,8 @@ Demonstrated track record of performance optimization, cutting production API re
 
 ## 📬 Contact & Connect
 
-- 🌐 **Portfolio Website:** [Live Demo](https://itsskycodes.github.io) *(or configured custom domain)*
+- 🌐 **Portfolio Website:** [Live Demo](https://its-sky-portfolio.vercel.app/) *(or configured custom domain)*
+- 📄 **Resume (PDF):** [Download Resume PDF](./public/resume/Shyam_Kumar_Yadav_Resume.pdf)
 - 💼 **LinkedIn:** [linkedin.com/in/shyam-kumar-yadav-5827431a6](https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6)
 - 🐙 **GitHub:** [github.com/itsskycodes](https://github.com/itsskycodes)
 - 📧 **Email:** [shyamsky1914@gmail.com](mailto:shyamsky1914@gmail.com)

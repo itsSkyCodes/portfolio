@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 
 import { Container } from "@/components/section";
 import { SocialLinks } from "@/components/social-links";
@@ -32,7 +32,7 @@ export function Hero() {
           <p className="mt-4 max-w-xl text-pretty text-base leading-relaxed text-muted sm:text-[1.05rem]">
             {hero.summary}
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Button asChild size="lg">
               <a href="#projects">
                 View My Work
@@ -40,6 +40,17 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
+              <a
+                href={site.resume.url}
+                download={site.resume.filename}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download aria-hidden />
+                Download Resume
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="ghost">
               <a href="#contact">{"Let's Connect"}</a>
             </Button>
           </div>
