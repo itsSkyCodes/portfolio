@@ -1,10 +1,10 @@
 "use client";
 
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Download, Menu, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import { navLinks } from "@/data/site";
+import { navLinks, site } from "@/data/site";
 import { cn } from "@/lib/utils";
 
 const sectionIds = navLinks.map((link) => link.href.slice(1));
@@ -96,6 +96,17 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Button asChild size="sm" variant="outline" className="hidden sm:inline-flex">
+            <a
+              href={site.resume.url}
+              download={site.resume.filename}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Download className="size-3.5" aria-hidden />
+              Resume
+            </a>
+          </Button>
           <Button asChild size="sm" className="hidden sm:inline-flex">
             <a href="#contact">
               {"Let's Talk"}
@@ -128,6 +139,18 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
+          <Button asChild variant="outline" className="mt-2 sm:hidden">
+            <a
+              href={site.resume.url}
+              download={site.resume.filename}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              <Download className="size-4" aria-hidden />
+              Download Resume
+            </a>
+          </Button>
           <Button asChild className="mt-2 sm:hidden">
             <a href="#contact" onClick={closeMenu}>
               {"Let's Talk"}

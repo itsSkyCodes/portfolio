@@ -18,6 +18,10 @@ export const site = {
   company: "Luminoguru Pvt. Ltd.",
   linkedin: "https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6",
   github: "https://github.com/itsskycodes",
+  resume: {
+    url: "/resume/Shyam_Kumar_Yadav_Resume.pdf",
+    filename: "Shyam_Kumar_Yadav_Resume.pdf",
+  },
 } as const;
 
 export const navLinks = [
