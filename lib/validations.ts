@@ -29,6 +29,7 @@ export const contactSchema = z.object({
     .min(10, "Message must be at least 10 characters.")
     .max(2000, "Message must be 2,000 characters or fewer."),
   company_url: z.string().optional(),
+  b_hp_check: z.string().optional(),
   startedAt: z.number().optional(),
 });
 
@@ -60,14 +61,30 @@ export function fieldErrorsFromZod(error: z.ZodError): ContactFieldErrors {
 }
 
 /** True when the honeypot was filled or the form was submitted unrealistically fast. */
-export function isLikelySpam(input: Pick<ContactInput, "company_url" | "startedAt" | "message">): boolean {
-  if (input.company_url && input.company_url.trim().length > 0) return true;
+export function isLikelySpam(input: Pick<ContactInput, "company_url" | "b_hp_check" | "startedAt" | "message">): boolean {
+  if (input.company_url && input.company_url.trim().length > 0) {
+    console.warn("[spam] company_url honeypot was filled:", input.company_url);
+    return true;
+  }
 
-  if (typeof input.startedAt === "number") {
+  if (input.b_hp_check && input.b_hp_check.trim().length > 0) {
+    console.warn("[spam] b_hp_check honeypot was filled:", input.b_hp_check);
+    return true;
+  }
+
+  if (process.env.NODE_ENV === "production" && typeof input.startedAt === "number") {
     const elapsed = Date.now() - input.startedAt;
-    if (elapsed >= 0 && elapsed < 1500) return true;
+    if (elapsed >= 0 && elapsed < 400) {
+      console.warn("[spam] submitted unrealistically fast (elapsed ms):", elapsed);
+      return true;
+    }
   }
 
   const linkCount = input.message.match(/https?:\/\//gi)?.length ?? 0;
-  return linkCount > 4;
+  if (linkCount > 4) {
+    console.warn("[spam] too many links in message:", linkCount);
+    return true;
+  }
+
+  return false;
 }

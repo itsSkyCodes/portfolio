@@ -35,7 +35,7 @@ const emptyForm: FormState = {
 
 /** Contact details and a Brevo-backed form. Submission stays on this page. */
 export function Contact() {
-  const [startedAt] = useState(() => Date.now());
+  const [startedAt, setStartedAt] = useState(() => Date.now());
   const [values, setValues] = useState<FormState>(emptyForm);
   const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<ContactFieldErrors>({});
@@ -53,7 +53,7 @@ export function Contact() {
 
     const parsed = contactSchema.safeParse({
       ...values,
-      company_url: honeypot,
+      b_hp_check: honeypot,
       startedAt,
     });
 
@@ -82,6 +82,7 @@ export function Contact() {
       }
 
       setValues(emptyForm);
+      setHoneypot("");
       setErrors({});
       setStatus("success");
       setMessage(data.message || contactCopy.success);
@@ -144,6 +145,8 @@ export function Contact() {
                   onClick={() => {
                     setStatus("idle");
                     setMessage("");
+                    setHoneypot("");
+                    setStartedAt(Date.now());
                   }}
                 >
                   Send another message
@@ -151,14 +154,14 @@ export function Contact() {
               </div>
             ) : (
               <form noValidate onSubmit={onSubmit} className="space-y-5">
-                <div className="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
-                  <label htmlFor="company_url">Company URL</label>
+                <div className="hidden" aria-hidden="true" style={{ display: "none" }}>
+                  <label htmlFor="b_hp_check">Do not fill this field</label>
                   <input
-                    id="company_url"
-                    name="company_url"
+                    id="b_hp_check"
+                    name="b_hp_check"
                     type="text"
                     tabIndex={-1}
-                    autoComplete="off"
+                    autoComplete="new-password"
                     value={honeypot}
                     onChange={(event) => setHoneypot(event.target.value)}
                   />
