@@ -36,28 +36,38 @@ export async function submitContact(input: unknown, ip: string): Promise<SubmitR
   }
 
   if (isLikelySpam(parsed.data)) {
-    return { status: 200, body: { ok: true, message: SUCCESS_MESSAGE } };
+    if (process.env.NODE_ENV !== "production") {
+      console.warn("[contact] Spam flag triggered in development mode; proceeding anyway to allow local testing.");
+    } else {
+      return { status: 200, body: { ok: true, message: SUCCESS_MESSAGE } };
+    }
   }
 
-  const ipLimit = rateLimit(`ip:${ip}`, 5, 15 * 60 * 1000);
-  const emailLimit = rateLimit(`email:${parsed.data.email.toLowerCase()}`, 3, 60 * 60 * 1000);
-  const limited = !ipLimit.success ? ipLimit : !emailLimit.success ? emailLimit : null;
+  const isLocal = !ip || ip === "unknown" || ip === "127.0.0.1" || ip === "::1" || ip === "localhost";
+  const isDev = process.env.NODE_ENV !== "production";
 
-  if (limited) {
-    return {
-      status: 429,
-      retryAfterSeconds: limited.retryAfterSeconds,
-      body: {
-        ok: false,
-        message: "Too many messages. Please try again in a few minutes.",
-      },
-    };
+  if (!isDev && !isLocal) {
+    const ipLimit = rateLimit(`ip:${ip}`, 10, 15 * 60 * 1000);
+    const emailLimit = rateLimit(`email:${parsed.data.email.toLowerCase()}`, 5, 60 * 60 * 1000);
+    const limited = !ipLimit.success ? ipLimit : !emailLimit.success ? emailLimit : null;
+
+    if (limited) {
+      return {
+        status: 429,
+        retryAfterSeconds: limited.retryAfterSeconds,
+        body: {
+          ok: false,
+          message: "Too many messages. Please try again in a few minutes.",
+        },
+      };
+    }
   }
 
   try {
     await sendContactEmail(parsed.data);
+    console.info(`[contact] Message from ${parsed.data.email} successfully sent via Brevo.`);
   } catch (error) {
-    console.error("Contact delivery failed", error instanceof Error ? error.message : "Unknown error");
+    console.error("Contact delivery failed:", error instanceof Error ? error.message : "Unknown error");
     const unconfigured = error instanceof Error && error.message.startsWith("Missing environment variable");
     return {
       status: unconfigured ? 503 : 502,
