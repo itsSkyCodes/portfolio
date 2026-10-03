@@ -114,6 +114,16 @@ export function Contact() {
               </a>
             </p>
             <p>
+              <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-muted">Availability</span>
+              <span className="mt-1 inline-flex items-center gap-2 text-foreground/90">
+                <span className="relative flex size-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                  <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
+                </span>
+                {site.availability}
+              </span>
+            </p>
+            <p>
               <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-muted">Location</span>
               <span className="mt-1 inline-block">{site.location}</span>
             </p>

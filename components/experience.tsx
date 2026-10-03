@@ -19,7 +19,7 @@ export function Experience() {
           index="03"
           eyebrow="Experience"
           title="Production ownership, not ticket delivery."
-          description="One company, a widening scope: multi-tenant SaaS, inventory systems, and a Generative AI pipeline in production."
+          description="4+ years of production engineering: multi-tenant SaaS, inventory systems, and Generative AI pipelines in production at Luminoguru."
         />
 
         <div className="mt-14 grid gap-10 lg:grid-cols-12">

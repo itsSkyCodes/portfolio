@@ -21,7 +21,16 @@ export function Hero() {
       />
       <Container className="relative grid items-center gap-14 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-7">
-          <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-accent">{hero.eyebrow}</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-accent">{hero.eyebrow}</p>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-400">
+              <span className="relative flex size-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex size-1.5 rounded-full bg-emerald-500" />
+              </span>
+              {site.status}
+            </span>
+          </div>
           <h1 className="mt-5 max-w-3xl text-[2.55rem] leading-[1.05] font-medium tracking-[-0.035em] text-balance text-foreground sm:text-6xl lg:text-[4.35rem]">
             {lead}
             <span className="text-accent">{accent}</span>
@@ -61,7 +70,7 @@ export function Hero() {
               <span className="mx-2 text-white/20" aria-hidden>
                 /
               </span>
-              {site.company}
+              <span className="text-foreground/80">{site.availability}</span>
             </p>
           </div>
         </div>
