@@ -18,27 +18,34 @@ export function ImpactMetrics() {
         <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted">Engineering impact</p>
       </Container>
       <div className="mx-auto grid max-w-6xl grid-cols-2 border-t border-white/10 lg:grid-cols-5">
-        {metrics.map((metric, index) => (
-          <article
-            key={metric.id}
-            className={cn(
-              "border-white/10 px-5 py-8 sm:px-8 sm:py-10",
-              index < metrics.length - 1 && "border-b lg:border-b-0",
-              index % 2 === 0 && index !== metrics.length - 1 && "max-lg:border-r",
-              index > 0 && "lg:border-l",
-              index === metrics.length - 1 && "col-span-2 border-b-0 lg:col-span-1",
-            )}
-          >
-            <p className="font-mono text-4xl tracking-tight text-foreground sm:text-5xl">
-              {"count" in metric && metric.count ? (
-                <CountUp end={metric.end} suffix={metric.suffix} />
-              ) : (
-                <span>{metric.display}</span>
+        {metrics.map((metric, index) => {
+          const isLast = index === metrics.length - 1;
+          return (
+            <article
+              key={metric.id}
+              className={cn(
+                "border-white/10 px-4 py-5 sm:px-6 sm:py-8 md:px-8 md:py-10 flex flex-col justify-center",
+                index < metrics.length - 1 && "border-b lg:border-b-0",
+                index % 2 === 0 && index !== metrics.length - 1 && "max-lg:border-r",
+                index > 0 && "lg:border-l",
+                isLast && "col-span-2 border-b-0 lg:col-span-1",
               )}
-            </p>
-            <p className="mt-3 max-w-[12rem] text-sm leading-snug text-muted">{metric.label}</p>
-          </article>
-        ))}
+            >
+              <div className={cn(isLast ? "flex flex-row items-baseline justify-between sm:flex-col sm:items-start" : "")}>
+                <p className="font-mono text-2xl min-[360px]:text-3xl sm:text-4xl lg:text-5xl tracking-tight text-foreground font-medium">
+                  {"count" in metric && metric.count ? (
+                    <CountUp end={metric.end} suffix={metric.suffix} />
+                  ) : (
+                    <span>{metric.display}</span>
+                  )}
+                </p>
+                <p className={cn("text-xs sm:text-sm leading-snug text-muted", isLast ? "mt-0 sm:mt-2.5" : "mt-2 sm:mt-2.5 max-w-[12rem]")}>
+                  {metric.label}
+                </p>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

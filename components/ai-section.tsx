@@ -10,8 +10,8 @@ export function AiSection() {
   const reduced = useReducedMotion();
 
   return (
-    <section id="ai" aria-labelledby="ai-heading" className="scroll-mt-24 border-t border-white/10 bg-[#0c0b0a] py-24 sm:py-32">
-      <Container className="grid items-start gap-14 lg:grid-cols-12">
+    <section id="ai" aria-labelledby="ai-heading" className="scroll-mt-24 border-t border-white/10 bg-[#0c0b0a] py-14 sm:py-20 lg:py-28">
+      <Container className="grid items-start gap-8 sm:gap-12 lg:grid-cols-12 lg:gap-14">
         <div className="lg:col-span-5">
           <SectionHeading
             id="ai-heading"
@@ -20,10 +20,10 @@ export function AiSection() {
             title={aiPipeline.title}
             description={aiPipeline.subtitle}
           />
-          <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted sm:text-[1.05rem]">
+          <p className="mt-4 sm:mt-6 max-w-xl text-pretty text-sm sm:text-base leading-relaxed text-muted sm:text-[1.05rem]">
             {aiPipeline.summary}
           </p>
-          <p className="mt-8 font-mono text-sm tracking-wide text-foreground/90">
+          <p className="mt-6 sm:mt-8 font-mono text-xs sm:text-sm tracking-wide text-foreground/90">
             {aiPipeline.stack.join(" · ")}
           </p>
         </div>
@@ -43,11 +43,11 @@ export function AiSection() {
               transition={reduced ? { duration: 0 } : { duration: 4.2, repeat: Infinity, ease: "easeInOut" }}
             />
             {aiPipeline.steps.map((step, index) => (
-              <li key={step} className="relative pb-3 last:pb-0 sm:pl-12">
+              <li key={step} className="relative pb-2.5 sm:pb-3 last:pb-0 sm:pl-12">
                 <span className="absolute top-4 left-2 hidden size-4 rounded-full border border-accent/80 bg-[#0c0b0a] sm:block" aria-hidden />
-                <div className="flex items-center justify-between gap-4 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3.5">
-                  <span className="text-sm text-foreground sm:text-base">{step}</span>
-                  <span className="font-mono text-[11px] text-accent">0{index + 1}</span>
+                <div className="flex items-center justify-between gap-3 sm:gap-4 rounded-xl border border-white/10 bg-white/[0.02] px-3.5 sm:px-4 py-3 sm:py-3.5">
+                  <span className="text-xs sm:text-sm md:text-base text-foreground font-medium">{step}</span>
+                  <span className="font-mono text-[10px] sm:text-[11px] text-accent">0{index + 1}</span>
                 </div>
               </li>
             ))}

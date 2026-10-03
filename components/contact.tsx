@@ -93,8 +93,8 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" aria-labelledby="contact-heading" className="scroll-mt-24 border-t border-white/10 py-24 sm:py-32">
-      <Container className="grid gap-14 lg:grid-cols-12">
+    <section id="contact" aria-labelledby="contact-heading" className="scroll-mt-24 border-t border-white/10 py-14 sm:py-20 lg:py-28">
+      <Container className="grid gap-10 sm:gap-14 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <SectionHeading id="contact-heading" index="08" eyebrow="Contact" title={contactCopy.title} />
           <p className="mt-6 max-w-md text-pretty text-base leading-relaxed text-muted sm:text-lg">
@@ -103,7 +103,7 @@ export function Contact() {
           <address className="mt-8 space-y-3 text-sm not-italic text-foreground/90">
             <p>
               <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-muted">Email</span>
-              <a className="mt-1 inline-block hover:text-accent" href={`mailto:${site.email}`}>
+              <a className="mt-1 inline-block hover:text-accent break-all sm:break-normal" href={`mailto:${site.email}`}>
                 {site.email}
               </a>
             </p>
@@ -115,12 +115,12 @@ export function Contact() {
             </p>
             <p>
               <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-muted">Availability</span>
-              <span className="mt-1 inline-flex items-center gap-2 text-foreground/90">
-                <span className="relative flex size-2">
+              <span className="mt-1 inline-flex items-start gap-2 text-foreground/90">
+                <span className="relative flex size-2 mt-1.5 shrink-0">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
                 </span>
-                {site.availability}
+                <span>{site.availability}</span>
               </span>
             </p>
             <p>
@@ -145,7 +145,7 @@ export function Contact() {
         </div>
 
         <div className="lg:col-span-7">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:p-7">
+          <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-4 sm:p-6 lg:p-7">
             {status === "success" ? (
               <div role="status" className="py-10">
                 <p className="text-xl font-medium tracking-tight text-foreground">{contactCopy.success}</p>

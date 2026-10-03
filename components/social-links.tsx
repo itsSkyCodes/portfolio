@@ -25,10 +25,13 @@ export function SocialLinks({ className, showLabels = false }: SocialLinksProps)
           <li key={link.label}>
             <a
               href={link.href}
-              className="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 px-3 text-sm text-muted transition-colors hover:border-white/25 hover:text-foreground"
+              className={cn(
+                "inline-flex h-10 items-center justify-center rounded-full border border-white/10 text-sm text-muted transition-colors hover:border-white/25 hover:text-foreground active:bg-white/10 touch-manipulation",
+                showLabels ? "gap-2 px-3.5" : "size-10 px-0"
+              )}
               {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
-              <Icon className="size-4" aria-hidden />
+              <Icon className="size-4 shrink-0" aria-hidden />
               {showLabels ? link.label : <span className="sr-only">{link.label}</span>}
             </a>
           </li>

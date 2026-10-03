@@ -13,7 +13,7 @@ export function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="scroll-mt-24 border-t border-white/10 py-24 sm:py-32"
+      className="scroll-mt-24 border-t border-white/10 py-14 sm:py-20 lg:py-28"
     >
       <Container>
         <SectionHeading
@@ -23,7 +23,7 @@ export function Projects() {
           title="Production systems, shipped with constraints."
           description="Six core production systems spanning multi-tenant SaaS, Generative AI orchestration, ERP-integrated inventory, oncology diagnostics, social platforms, and real-time booking."
         />
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        <div className="mt-8 sm:mt-12 grid gap-5 sm:gap-6 lg:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
@@ -44,16 +44,16 @@ function ProjectCard({ project }: { project: Project }) {
   const purpose = "purpose" in project ? project.purpose : undefined;
 
   return (
-    <article className="reveal flex flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-7 transition-colors hover:border-accent/30">
+    <article className="reveal flex flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.02] p-4 sm:p-6 lg:p-7 transition-colors hover:border-accent/30">
       <div>
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
+        <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
+          <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] text-accent">
             {project.category}
           </span>
           <span className="font-mono text-xs text-muted">{project.dates}</span>
         </div>
 
-        <h3 className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-[1.65rem]">
+        <h3 className="mt-3.5 sm:mt-4 text-xl min-[400px]:text-2xl font-medium tracking-tight text-foreground sm:text-[1.65rem] break-words">
           {project.title}
         </h3>
 
@@ -82,7 +82,7 @@ function ProjectCard({ project }: { project: Project }) {
             {technologies.map((item) => (
               <li
                 key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs sm:text-sm text-foreground/90"
+                className="rounded-full border border-white/10 bg-white/[0.03] px-2.5 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm text-foreground/90"
               >
                 {item}
               </li>
@@ -94,12 +94,12 @@ function ProjectCard({ project }: { project: Project }) {
       <div className="mt-6 border-t border-white/5 pt-4">
         <button
           type="button"
-          className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors"
+          className="inline-flex items-center gap-2 py-1.5 text-xs sm:text-sm font-medium text-foreground hover:text-accent transition-colors touch-manipulation"
           aria-expanded={open}
           aria-controls={panelId}
           onClick={() => setOpen((value) => !value)}
         >
-          {open ? "Hide technical details & contributions" : "View key features & contributions"}
+          {open ? "Hide technical details & contributions" : "View technical details & contributions"}
           <ChevronDown
             className={cn(
               "size-4 transition-transform motion-reduce:transition-none",
