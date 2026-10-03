@@ -19,10 +19,6 @@ export function JsonLd() {
       addressLocality: "Chandigarh",
       addressCountry: "IN",
     },
-    worksFor: {
-      "@type": "Organization",
-      name: site.company,
-    },
     alumniOf: education.map((item) => ({
       "@type": "EducationalOrganization",
       name: item.institution,

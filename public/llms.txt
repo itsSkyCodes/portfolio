@@ -15,7 +15,7 @@
 
 - [About Shyam Kumar Yadav](https://its-sky-portfolio.vercel.app/#about): 4+ years of experience, engineering leadership, and key domains spanning multi-tenant SaaS, healthcare diagnostics, and GenAI.
 - [Technical Skills & Stack](https://its-sky-portfolio.vercel.app/#skills): Full breakdown of languages (TypeScript, JavaScript, Python, SQL), frameworks (NestJS, Express, AdonisJS, Angular, React), databases, queues, and AI tools.
-- [Work Experience](https://its-sky-portfolio.vercel.app/#experience): Software Engineer at Luminoguru Pvt. Ltd. (Jan 2022 – Present), promoted from Associate Software Engineer.
+- [Work Experience](https://its-sky-portfolio.vercel.app/#experience): Software Engineer at Luminoguru Pvt. Ltd. (Jan 2022 – Sep 2026), promoted from Associate Software Engineer. Currently open to new full-time software engineering roles.
 - [Generative AI Architecture](https://its-sky-portfolio.vercel.app/#ai): Production agentic pipeline details featuring FastAPI, CrewAI multi-agent routing, OpenAI GPT-4o, Pinecone vector RAG, and SSE streaming.
 - [Engineering Principles](https://its-sky-portfolio.vercel.app/#principles): Core philosophies: Build End-to-End, Optimize With Data, Design for Production, and Keep Systems Maintainable.
 - [Education & Credentials](https://its-sky-portfolio.vercel.app/#education): Master of Computer Applications (MCA) from Lovely Professional University and Bachelor of Computer Applications (BCA) from Panjab University.

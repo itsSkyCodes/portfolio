@@ -9,7 +9,7 @@ type ContainerProps = {
 
 /** Centered page column with consistent horizontal padding. */
 export function Container({ children, className }: ContainerProps) {
-  return <div className={cn("mx-auto w-full max-w-6xl px-5 sm:px-8", className)}>{children}</div>;
+  return <div className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6 md:px-8", className)}>{children}</div>;
 }
 
 type SectionHeadingProps = {
@@ -29,7 +29,7 @@ export function SectionHeading({ index, eyebrow, title, description, id }: Secti
       </p>
       <h2
         id={id}
-        className="mt-4 text-3xl font-medium tracking-tight text-balance text-foreground sm:text-4xl lg:text-[2.65rem] lg:leading-[1.12]"
+        className="mt-4 text-2xl min-[400px]:text-3xl sm:text-4xl lg:text-[2.65rem] lg:leading-[1.12] font-medium tracking-tight text-balance text-foreground break-words"
       >
         {title}
       </h2>
