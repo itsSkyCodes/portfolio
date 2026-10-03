@@ -15,7 +15,9 @@ export const site = {
   phone: "+91 9569970184",
   phoneHref: "tel:+919569970184",
   location: "Chandigarh, India",
-  company: "Luminoguru Pvt. Ltd.",
+  status: "Open to Work",
+  availability: "Available for full-time Software Engineer roles",
+  previousCompany: "Luminoguru Pvt. Ltd.",
   linkedin: "https://www.linkedin.com/in/shyam-kumar-yadav-5827431a6",
   github: "https://github.com/itsskycodes",
   resume: {

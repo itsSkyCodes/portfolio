@@ -3,6 +3,7 @@
 <div align="left">
 
 [![Full-Stack Developer](https://img.shields.io/badge/Role-Full--Stack%20Software%20Developer-10b981?style=for-the-badge)](https://github.com/itsskycodes)
+[![Status](https://img.shields.io/badge/Status-Open%20to%20Work-10b981?style=for-the-badge)](mailto:shyamsky1914@gmail.com)
 [![Experience](https://img.shields.io/badge/Experience-4%2B%20Years%20Production-3b82f6?style=for-the-badge)](https://github.com/itsskycodes)
 [![Download Resume](https://img.shields.io/badge/Download-Resume_PDF-2ea44f?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./public/resume/Shyam_Kumar_Yadav_Resume.pdf)
 [![Location](https://img.shields.io/badge/Location-Chandigarh%2C%20India-f59e0b?style=for-the-badge)](https://www.google.com/maps/place/Chandigarh)
@@ -115,7 +116,7 @@ Demonstrated track record of performance optimization, cutting production API re
 
 ### 1. MyRelma — Multi-Tenant Career-Coaching SaaS Platform
 > **Stack:** NestJS · TypeScript · PostgreSQL · TypeORM · Redis · BullMQ · OpenAI GPT-4o · CrewAI · Pinecone · Pusher · Cloudflare R2 · Google APIs · LinkedIn API  
-> **Timeline:** Jun 2025 – Present | **Role:** Tech Lead & Full-Stack Architect
+> **Timeline:** Jun 2025 – Sep 2026 | **Role:** Tech Lead & Full-Stack Architect
 
 - **Zero-to-Production SaaS Architecture:** Architected and engineered the platform from scratch with a **27-module NestJS REST API**, PostgreSQL/TypeORM multi-tenant data isolation, and Redis/BullMQ background processing across **10 job queues**, maintaining **99%+ uptime** across **20+ tenant organizations** while leading a 3-person engineering team.
 - **Generative AI Career Assistant:** Engineered a production GenAI assistant (**FastAPI + CrewAI + OpenAI GPT-4o + Pinecone RAG**) with 6 production endpoints:
@@ -181,7 +182,7 @@ Demonstrated track record of performance optimization, cutting production API re
 ## 💼 Work Experience
 
 ### **Luminoguru Pvt. Ltd. — Mohali, Punjab, India**
-**Software Engineer** | *Jan 2022 – Present*  
+**Software Engineer** | *Jan 2022 – Sep 2026*  
 *(Promoted from Associate Software Engineer)*
 
 - Lead architectural decisions and oversee full-stack development across multi-tenant SaaS, generative AI services, enterprise ERP integrations, and high-concurrency real-time platforms.

@@ -138,7 +138,7 @@ export const experience = {
   company: "Luminoguru Pvt. Ltd.",
   title: "Software Engineer",
   promotion: "Promoted from Associate Software Engineer",
-  dates: "Jan 2022 – Present",
+  dates: "Jan 2022 – Sep 2026",
   location: "Mohali, Punjab, India",
   achievements: [
     {
@@ -238,7 +238,7 @@ export const projects = [
     id: "myrelma",
     title: "MyRelma — Multi-Tenant Career Coaching SaaS",
     category: "Multi-Tenant SaaS & Generative AI",
-    dates: "Jun 2025 – Present",
+    dates: "Jun 2025 – Sep 2026",
     description:
       "A multi-tenant career-coaching SaaS platform built from zero to production, supporting 20+ tenant organizations at 99%+ uptime with comprehensive agentic AI career tooling.",
     purpose:

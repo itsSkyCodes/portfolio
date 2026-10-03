@@ -66,12 +66,12 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled || open
-          ? "border-b border-white/10 bg-background/75 backdrop-blur-md"
+          ? "border-b border-white/10 bg-background/90 backdrop-blur-xl shadow-lg shadow-black/20"
           : "border-b border-transparent bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
-        <a href="#home" className="shrink-0 text-[11px] font-medium tracking-[0.16em] text-foreground sm:text-xs sm:tracking-[0.2em]">
+      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 md:px-8">
+        <a href="#home" className="shrink-0 text-[11px] font-medium tracking-[0.14em] min-[360px]:tracking-[0.16em] text-foreground sm:text-xs sm:tracking-[0.2em]">
           SHYAM KUMAR YADAV
         </a>
 
@@ -115,7 +115,7 @@ export function Navbar() {
           </Button>
           <button
             type="button"
-            className="inline-flex size-10 items-center justify-center rounded-full border border-white/10 text-foreground lg:hidden"
+            className="inline-flex size-10 items-center justify-center rounded-full border border-white/10 text-foreground lg:hidden touch-manipulation"
             aria-expanded={open}
             aria-controls={menuId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -127,36 +127,49 @@ export function Navbar() {
         </div>
       </div>
 
-      <div id={menuId} hidden={!open} className="border-t border-white/10 lg:hidden">
-        <nav aria-label="Mobile" className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4 sm:px-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={closeMenu}
-              className="rounded-lg px-2 py-3 text-base text-foreground hover:bg-white/[0.04]"
-            >
-              {link.label}
-            </a>
-          ))}
-          <Button asChild variant="outline" className="mt-2 sm:hidden">
-            <a
-              href={site.resume.url}
-              download={site.resume.filename}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-            >
-              <Download className="size-4" aria-hidden />
-              Download Resume
-            </a>
-          </Button>
-          <Button asChild className="mt-2 sm:hidden">
-            <a href="#contact" onClick={closeMenu}>
-              {"Let's Talk"}
-              <ArrowRight aria-hidden />
-            </a>
-          </Button>
+      <div id={menuId} hidden={!open} className="border-t border-white/10 bg-background/95 backdrop-blur-xl shadow-2xl lg:hidden">
+        <nav aria-label="Mobile" className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4 sm:px-6 md:px-8">
+          {navLinks.map((link) => {
+            const id = link.href.slice(1);
+            const current = active === id;
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                aria-current={current ? "true" : undefined}
+                onClick={closeMenu}
+                className={cn(
+                  "flex items-center justify-between rounded-xl px-3.5 py-2.5 text-base transition-colors touch-manipulation min-h-[44px]",
+                  current
+                    ? "bg-accent/10 text-accent font-medium"
+                    : "text-foreground/80 hover:bg-white/[0.04] hover:text-foreground",
+                )}
+              >
+                <span>{link.label}</span>
+                {current && <span className="size-1.5 rounded-full bg-accent" aria-hidden />}
+              </a>
+            );
+          })}
+          <div className="mt-3 grid grid-cols-2 gap-2.5 pt-3 border-t border-white/10 sm:hidden">
+            <Button asChild variant="outline" size="sm" className="h-10 text-xs w-full justify-center touch-manipulation">
+              <a
+                href={site.resume.url}
+                download={site.resume.filename}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+              >
+                <Download className="size-3.5" aria-hidden />
+                Resume
+              </a>
+            </Button>
+            <Button asChild size="sm" className="h-10 text-xs w-full justify-center touch-manipulation">
+              <a href="#contact" onClick={closeMenu}>
+                {"Let's Talk"}
+                <ArrowRight className="size-3.5" aria-hidden />
+              </a>
+            </Button>
+          </div>
         </nav>
       </div>
     </header>

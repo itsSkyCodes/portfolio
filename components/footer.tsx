@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-white/10 py-10">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 sm:px-8 md:flex-row md:items-end md:justify-between">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 sm:px-6 md:px-8 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-sm tracking-[0.16em] text-foreground">SHYAM KUMAR YADAV</p>
           <p className="mt-2 text-sm text-muted">
@@ -17,9 +17,9 @@ export function Footer() {
             {site.location}
           </p>
         </div>
-        <nav aria-label="Footer" className="flex flex-wrap items-center gap-x-5 gap-y-2">
+        <nav aria-label="Footer" className="flex flex-wrap items-center gap-x-4 gap-y-2.5 sm:gap-x-5">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="text-sm text-muted hover:text-foreground">
+            <a key={link.href} href={link.href} className="text-sm text-muted transition-colors hover:text-foreground touch-manipulation py-1">
               {link.label}
             </a>
           ))}
@@ -28,13 +28,13 @@ export function Footer() {
             download={site.resume.filename}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-accent hover:underline"
+            className="text-sm text-accent transition-colors hover:underline touch-manipulation py-1"
           >
             Resume (PDF)
           </a>
         </nav>
       </div>
-      <div className="mx-auto mt-8 w-full max-w-6xl px-5 sm:px-8">
+      <div className="mx-auto mt-8 w-full max-w-6xl px-4 sm:px-6 md:px-8">
         <p className="font-mono text-[11px] tracking-wide text-muted">
           © {year} {site.name}. TypeScript · Node.js · NestJS · SaaS · Generative AI
         </p>

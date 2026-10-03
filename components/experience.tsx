@@ -12,23 +12,23 @@ export function Experience() {
   const [openId, setOpenId] = useState<string>(experience.achievements[0]?.id ?? "");
 
   return (
-    <section id="experience" aria-labelledby="experience-heading" className="scroll-mt-24 border-t border-white/10 py-24 sm:py-32">
+    <section id="experience" aria-labelledby="experience-heading" className="scroll-mt-24 border-t border-white/10 py-14 sm:py-20 lg:py-28">
       <Container>
         <SectionHeading
           id="experience-heading"
           index="03"
           eyebrow="Experience"
           title="Production ownership, not ticket delivery."
-          description="One company, a widening scope: multi-tenant SaaS, inventory systems, and a Generative AI pipeline in production."
+          description="4+ years of production engineering: multi-tenant SaaS, inventory systems, and Generative AI pipelines in production at Luminoguru."
         />
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-4">
+        <div className="mt-8 sm:mt-12 lg:mt-14 grid gap-8 lg:grid-cols-12 lg:gap-10">
+          <div className="lg:col-span-4 pb-8 border-b border-white/10 lg:border-b-0 lg:pb-0">
             <p className="font-mono text-sm text-accent">{experience.dates}</p>
-            <p className="mt-3 text-2xl font-medium tracking-tight text-foreground">{experience.company}</p>
-            <p className="mt-2 text-base text-foreground/90">{experience.title}</p>
-            <p className="mt-1 text-sm text-muted">{experience.promotion}</p>
-            <p className="mt-4 text-sm text-muted">{experience.location}</p>
+            <p className="mt-2 sm:mt-3 text-xl sm:text-2xl font-medium tracking-tight text-foreground">{experience.company}</p>
+            <p className="mt-1.5 sm:mt-2 text-sm sm:text-base text-foreground/90">{experience.title}</p>
+            <p className="mt-1 text-xs sm:text-sm text-muted">{experience.promotion}</p>
+            <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-muted">{experience.location}</p>
           </div>
 
           <ol className="relative lg:col-span-8">
@@ -68,13 +68,13 @@ function Achievement({
   const callout = "callout" in item ? item.callout : undefined;
 
   return (
-    <article className={cn("mb-4 rounded-2xl border bg-white/[0.02] p-5 sm:p-6", featured ? "border-accent/35" : "border-white/10")}>
+    <article className={cn("mb-4 rounded-2xl border bg-white/[0.02] p-4 sm:p-6", featured ? "border-accent/35" : "border-white/10")}>
       <div className="flex items-start justify-between gap-4">
         <div>
           {featured ? (
             <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">Production AI</p>
           ) : null}
-          <h3 className="text-lg font-medium tracking-tight text-foreground sm:text-xl">{item.title}</h3>
+          <h3 className="text-base sm:text-lg lg:text-xl font-medium tracking-tight text-foreground break-words">{item.title}</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">{item.summary}</p>
         </div>
       </div>
@@ -128,7 +128,7 @@ function Meta({ label, items }: { label: string; items: readonly string[] }) {
       <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">{label}</p>
       <ul className="mt-2 flex flex-wrap gap-2">
         {items.map((item) => (
-          <li key={item} className="rounded-full border border-white/10 px-3 py-1 text-sm text-foreground/90">
+          <li key={item} className="rounded-full border border-white/10 px-2.5 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm text-foreground/90">
             {item}
           </li>
         ))}

@@ -29,6 +29,7 @@
 html {
   color-scheme: dark;
   scroll-padding-top: 5.5rem;
+  overflow-x: clip;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -40,6 +41,9 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
